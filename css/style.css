@@ -27,7 +27,7 @@ body {
 }
 
 .header img {
-  height: 30px;
+  width: 120px;
 }
 
 .img__container {
@@ -149,7 +149,7 @@ body {
     padding: 6.4rem 0 10.4rem 0;
   }
   .header img {
-    height: 32px;
+    width: 200px;
   }
   .img__container {
     margin: 0 6rem 0 0;
