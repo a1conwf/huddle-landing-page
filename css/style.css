@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #684BB1;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wrapper {
+  max-width: 305px;
+  width: 100%;
+  margin: 0 auto 4rem auto;
+}
+
+.header {
+  padding: 3.8rem 0 7rem 0;
+}
+
+.header img {
+  height: 30px;
+}
+
+.img__container {
+  margin-bottom: 6rem;
+}
+
+.img__container img {
+  width: 100%;
+}
+
+.build__community {
+  margin-bottom: 6.4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.build__community h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.build__community p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.build__community button {
+  max-width: 200px;
+  width: 100%;
+  padding: 1.1rem 7.5rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #684BB1;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.build__community button:hover {
+  background-color: #E880E8;
+  color: #fff;
+}
+
+.footer {
+  max-width: 120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer .social__list__link {
+  padding: .8rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.footer .social__list__link img {
+  width: 15px;
+  -webkit-filter: invert(100%) sepia(1%) saturate(6790%) hue-rotate(18deg) brightness(125%) contrast(119%);
+          filter: invert(100%) sepia(1%) saturate(6790%) hue-rotate(18deg) brightness(125%) contrast(119%);
+}
+
+.footer .social__list__link:hover {
+  border-color: #FF52C1;
+}
+
+.footer .social__list__link:hover img {
+  -webkit-filter: invert(50%) sepia(87%) saturate(1991%) hue-rotate(293deg) brightness(99%) contrast(107%);
+          filter: invert(50%) sepia(87%) saturate(1991%) hue-rotate(293deg) brightness(99%) contrast(107%);
+}
+
+.footer .social__list__link:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    height: 100vh;
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 6.4rem 0 10.4rem 0;
+  }
+  .header img {
+    height: 32px;
+  }
+  .img__container {
+    margin: 0 6rem 0 0;
+  }
+  .img__container img {
+    width: 100%;
+    max-width: 690px;
+  }
+  .build__community {
+    max-width: 487px;
+    margin-bottom: 0;
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .build__community h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 2.4rem;
+  }
+  .build__community p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    margin-bottom: 2.4rem;
+  }
+  .build__community button {
+    padding: 1.3rem 6.4rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    border-radius: 2.8rem;
+  }
+  .footer {
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 4rem;
+    right: 8rem;
+  }
+  .footer .social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .social__list__link {
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-width: 1400px) {
+  .wrapper {
+    max-width: 1320px;
+  }
+}

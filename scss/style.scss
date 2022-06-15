@@ -1,0 +1,218 @@
+@import "./globals";
+
+//Wrapper
+.wrapper {
+    max-width: 305px;
+    width: 100%;
+    margin: 0 auto 4rem auto;
+}
+
+//Header
+.header {
+    padding: 3.8rem 0 7rem 0;
+
+    img {
+        height: 30px;
+    }
+}
+
+//Img container
+.img__container {
+    margin-bottom: 6rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+//Build community section
+.build__community {
+    margin-bottom: 6.4rem;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 3.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    button {
+        max-width: 200px;
+        width: 100%;
+        padding: 1.1rem 7.5rem;
+        border: none;
+        border-radius: 2rem;
+        outline: none;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #684BB1;
+        cursor: pointer;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            background-color: #E880E8;
+            color: #fff;
+        }
+    }
+}
+
+//Footer
+.footer {
+    max-width: 120px;
+    margin: 0 auto;
+    text-align: center;
+
+    .social__list {
+        display: flex;
+        list-style: none;
+
+        &__link {
+            padding: .8rem;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            margin-right: 1rem;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+
+            img {
+                width: 15px;
+                filter: invert(100%) sepia(1%) saturate(6790%) hue-rotate(18deg) brightness(125%) contrast(119%);
+            }
+
+            &:hover {
+                border-color: #FF52C1;
+
+                img {
+                    filter: invert(50%) sepia(87%) saturate(1991%) hue-rotate(293deg) brightness(99%) contrast(107%);
+                }
+            }
+        }
+
+        &__link:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+//Media queries
+@media screen and (min-width: 426px) {
+    body {
+        background-image: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    //Body
+    body {
+        height: 100vh;
+        background-image: url("../images/bg-desktop.svg");
+        background-size: cover;
+    }
+
+    //Main
+    main {
+        display: flex;
+    }
+
+    //Wrapper
+    .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    //Header
+    .header {
+        padding: 6.4rem 0 10.4rem 0;
+
+        img {
+            height: 32px;
+        }
+    }
+
+    //Img container
+    .img__container {
+        margin: 0 6rem 0 0;
+
+        img {
+            width: 100%;
+            max-width: 690px;
+        }
+    }
+
+    //Build community section
+    .build__community {
+        max-width: 487px;
+        margin-bottom: 0;
+        text-align: left;
+        align-self: center;
+
+        h1 {
+            font-size: 4rem;
+            line-height: 6rem;
+            margin-bottom: 2.4rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+            margin-bottom: 2.4rem;
+        }
+
+        button {
+            padding: 1.3rem 6.4rem;
+            border-radius: 2rem;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            border-radius: 2.8rem;
+        }
+    }
+
+    //Footer
+    .footer {
+        max-width: 100%;
+        margin: 0;
+        position: absolute;
+        bottom: 4rem;
+        right: 8rem;
+
+        .social__list {
+            justify-content: center;
+
+            &__link {
+                width: 40px;
+                height: 40px;
+                padding: 1rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        //Wrapper
+        .wrapper {
+            max-width: 1140px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+
+        //Wrapper
+        .wrapper {
+            max-width: 1320px;
+        }
+    }
+}
