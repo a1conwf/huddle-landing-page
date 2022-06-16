@@ -124,18 +124,15 @@ body {
   margin-right: 0;
 }
 
-@media screen and (min-width: 426px) {
-  body {
-    background-image: none;
-  }
-}
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   body {
     height: 100vh;
     background-image: url("../images/bg-desktop.svg");
     background-size: cover;
   }
+}
+
+@media screen and (min-width: 992px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -210,6 +207,9 @@ body {
 }
 
 @media screen and (min-width: 992px) and (min-width: 1400px) {
+  body {
+    background-size: contain;
+  }
   .wrapper {
     max-width: 1320px;
   }

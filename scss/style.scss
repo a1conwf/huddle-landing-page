@@ -107,20 +107,15 @@
 }
 
 //Media queries
-@media screen and (min-width: 426px) {
-    body {
-        background-image: none;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    //Body
+@media screen and (min-width: 768px) {
     body {
         height: 100vh;
         background-image: url("../images/bg-desktop.svg");
         background-size: cover;
     }
+}
+
+@media screen and (min-width: 992px) {
 
     //Main
     main {
@@ -209,6 +204,11 @@
     }
 
     @media screen and (min-width: 1400px) {
+
+        //Body
+        body {
+            background-size: contain;
+        }
 
         //Wrapper
         .wrapper {
